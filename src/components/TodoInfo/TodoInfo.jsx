@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { UserInfo } from '../UserInfo/UserInfo';
+import { UserInfo } from '../UserInfo';
 
 export const TodoInfo = ({ todo }) => (
   <article
@@ -8,6 +8,6 @@ export const TodoInfo = ({ todo }) => (
     })}
   >
     <h2 className="TodoInfo__title">{todo.title}</h2>
-    {todo.user && <UserInfo user={todo.user} />};
+    {todo.user && <UserInfo user={todo.user} />}
   </article>
 );
